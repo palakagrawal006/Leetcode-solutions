@@ -14,9 +14,7 @@ public:
             while(ss >> temp){
                 count++ ; 
             }
-
             maxi = max(maxi , count) ; 
-
         }
 
         return maxi  ;
