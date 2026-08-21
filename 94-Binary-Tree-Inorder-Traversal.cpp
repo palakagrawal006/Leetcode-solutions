@@ -1,27 +1,64 @@
+// MORRIS TRAVERSAL
+
 class Solution {
 public:
     vector<int> inorderTraversal(TreeNode* root) {
-        vector <int> ans; 
-        stack<TreeNode*> st ;
+      TreeNode *curr = root; 
+      vector <int> v; 
 
-        TreeNode *node = root ; 
+      while(curr !=NULL){
+        // if curr->left exists
+        if(curr->left != NULL){
+            // predecessor
+            TreeNode *pred = curr->left; 
+            while(pred->right != NULL && pred->right != curr) pred= pred->right;
 
-        while(!st.empty() || node){
-            if(node) {
-                st.push(node) ; 
-                node = node->left; 
+            // link 
+            if(pred->right == NULL) {
+                pred->right = curr; 
+                curr = curr->left ;
             }
-            else { // node is null 
-                TreeNode *temp = st.top() ; 
-                st.pop(); 
-                ans.push_back(temp->val);
-                node = temp->right ; 
-
+            // unlink 
+            if(pred->right == curr){
+                pred->right = NULL ; 
+                v.push_back(curr->val) ; 
+                curr = curr->right; 
             }
         }
-        return ans ; 
+        // if curr->left doesnt exists
+        else {
+            v.push_back(curr->val) ; 
+            curr= curr->right ; 
+        }
+      }
+      return v; 
     }
 };
+
+// class Solution {
+// public:
+//     vector<int> inorderTraversal(TreeNode* root) {
+//         vector <int> ans; 
+//         stack<TreeNode*> st ;
+
+//         TreeNode *node = root ; 
+
+//         while(!st.empty() || node){
+//             if(node) {
+//                 st.push(node) ; 
+//                 node = node->left; 
+//             }
+//             else { // node is null 
+//                 TreeNode *temp = st.top() ; 
+//                 st.pop(); 
+//                 ans.push_back(temp->val);
+//                 node = temp->right ; 
+
+//             }
+//         }
+//         return ans ; 
+//     }
+// };
 
 
 
