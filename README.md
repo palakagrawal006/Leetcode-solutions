@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sliding Window
 |  |
 | ------- |
+| [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 ## Math
 |  |
@@ -33,8 +34,25 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0098-validate-binary-search-tree) |
+| [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
 ## Binary Tree
 |  |
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0098-validate-binary-search-tree) |
+## Array
+|  |
+| ------- |
+| [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
+## Two Pointers
+|  |
+| ------- |
+| [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
+## Sorting
+|  |
+| ------- |
+| [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
+## Heap (Priority Queue)
+|  |
+| ------- |
+| [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
 <!---LeetCode Topics End-->
