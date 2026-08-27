@@ -47,14 +47,25 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0295-find-median-from-data-stream](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
 | [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
 ## Sorting
 |  |
 | ------- |
+| [0295-find-median-from-data-stream](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
 | [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0295-find-median-from-data-stream](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
 | [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
 | [1046-last-stone-weight](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1046-last-stone-weight) |
+## Design
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
+## Data Stream
+|  |
+| ------- |
+| [0295-find-median-from-data-stream](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
 <!---LeetCode Topics End-->
