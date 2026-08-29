@@ -42,6 +42,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0056-merge-intervals](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0056-merge-intervals) |
 | [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
 | [1046-last-stone-weight](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1046-last-stone-weight) |
 ## Two Pointers
@@ -52,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0056-merge-intervals](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0056-merge-intervals) |
 | [0295-find-median-from-data-stream](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
 | [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
 ## Heap (Priority Queue)
@@ -68,4 +70,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
+## Quicksort
+|  |
+| ------- |
+| [0056-merge-intervals](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0056-merge-intervals) |
 <!---LeetCode Topics End-->
