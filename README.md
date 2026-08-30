@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0480-sliding-window-median](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0480-sliding-window-median) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 ## String
 |  |
@@ -12,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sliding Window
 |  |
 | ------- |
+| [0480-sliding-window-median](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0480-sliding-window-median) |
 | [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 ## Math
@@ -43,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0056-merge-intervals) |
+| [0480-sliding-window-median](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0480-sliding-window-median) |
 | [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
 | [1046-last-stone-weight](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1046-last-stone-weight) |
 ## Two Pointers
@@ -60,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0295-find-median-from-data-stream) |
+| [0480-sliding-window-median](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0480-sliding-window-median) |
 | [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
 | [1046-last-stone-weight](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1046-last-stone-weight) |
 ## Design
@@ -74,4 +78,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0056-merge-intervals) |
+## Treap
+|  |
+| ------- |
+| [0480-sliding-window-median](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0480-sliding-window-median) |
 <!---LeetCode Topics End-->
