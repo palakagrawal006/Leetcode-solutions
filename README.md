@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0056-merge-intervals](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0056-merge-intervals) |
 | [0480-sliding-window-median](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0480-sliding-window-median) |
 | [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
+| [0746-min-cost-climbing-stairs](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0746-min-cost-climbing-stairs) |
 | [1046-last-stone-weight](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1046-last-stone-weight) |
 ## Two Pointers
 |  |
@@ -82,4 +83,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0480-sliding-window-median](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0480-sliding-window-median) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0746-min-cost-climbing-stairs](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0746-min-cost-climbing-stairs) |
 <!---LeetCode Topics End-->
