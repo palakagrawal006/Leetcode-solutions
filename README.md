@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [1137-n-th-tribonacci-number](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1137-n-th-tribonacci-number) |
 | [3345-smallest-divisible-digit-product-i](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/3345-smallest-divisible-digit-product-i) |
 ## Enumeration
 |  |
@@ -87,4 +88,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0746-min-cost-climbing-stairs](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0746-min-cost-climbing-stairs) |
+| [1137-n-th-tribonacci-number](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1137-n-th-tribonacci-number) |
+## Memoization
+|  |
+| ------- |
+| [1137-n-th-tribonacci-number](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1137-n-th-tribonacci-number) |
 <!---LeetCode Topics End-->
