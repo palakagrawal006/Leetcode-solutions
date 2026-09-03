@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0279-perfect-squares](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0279-perfect-squares) |
 | [1137-n-th-tribonacci-number](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1137-n-th-tribonacci-number) |
 | [3345-smallest-divisible-digit-product-i](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/3345-smallest-divisible-digit-product-i) |
 ## Enumeration
@@ -87,10 +88,23 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0279-perfect-squares](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0279-perfect-squares) |
 | [0746-min-cost-climbing-stairs](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0746-min-cost-climbing-stairs) |
 | [1137-n-th-tribonacci-number](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1137-n-th-tribonacci-number) |
 ## Memoization
 |  |
 | ------- |
 | [1137-n-th-tribonacci-number](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1137-n-th-tribonacci-number) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0279-perfect-squares](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0279-perfect-squares) |
+## Knapsack Problem
+|  |
+| ------- |
+| [0279-perfect-squares](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0279-perfect-squares) |
+## Complete Knapsack
+|  |
+| ------- |
+| [0279-perfect-squares](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0279-perfect-squares) |
 <!---LeetCode Topics End-->
