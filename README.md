@@ -32,10 +32,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0098-validate-binary-search-tree) |
+| [0543-diameter-of-binary-tree](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0543-diameter-of-binary-tree) |
 ## Depth-First Search
 |  |
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0098-validate-binary-search-tree) |
+| [0543-diameter-of-binary-tree](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0543-diameter-of-binary-tree) |
 ## Binary Search Tree
 |  |
 | ------- |
@@ -45,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0098-validate-binary-search-tree) |
+| [0543-diameter-of-binary-tree](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0543-diameter-of-binary-tree) |
 ## Array
 |  |
 | ------- |
@@ -115,4 +118,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1143-longest-common-subsequence](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1143-longest-common-subsequence) |
+## DP on Trees
+|  |
+| ------- |
+| [0543-diameter-of-binary-tree](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0543-diameter-of-binary-tree) |
 <!---LeetCode Topics End-->
