@@ -122,4 +122,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0543-diameter-of-binary-tree](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0543-diameter-of-binary-tree) |
+## Database
+|  |
+| ------- |
+| [0584-find-customer-referee](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0584-find-customer-referee) |
 <!---LeetCode Topics End-->
