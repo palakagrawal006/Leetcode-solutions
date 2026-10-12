@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0058-length-of-last-word](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0058-length-of-last-word) |
 | [0072-edit-distance](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0072-edit-distance) |
 | [1143-longest-common-subsequence](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1143-longest-common-subsequence) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
