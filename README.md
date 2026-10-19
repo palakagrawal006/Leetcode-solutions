@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0098-validate-binary-search-tree](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0098-validate-binary-search-tree) |
 | [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
+| [2187-minimum-time-to-complete-trips](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/2187-minimum-time-to-complete-trips) |
 ## Binary Tree
 |  |
 | ------- |
@@ -59,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0658-find-k-closest-elements](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0658-find-k-closest-elements) |
 | [0746-min-cost-climbing-stairs](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0746-min-cost-climbing-stairs) |
 | [1046-last-stone-weight](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1046-last-stone-weight) |
+| [2187-minimum-time-to-complete-trips](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/2187-minimum-time-to-complete-trips) |
 ## Two Pointers
 |  |
 | ------- |
