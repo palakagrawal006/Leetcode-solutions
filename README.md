@@ -131,4 +131,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0584-find-customer-referee](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/0584-find-customer-referee) |
+| [1484-group-sold-products-by-the-date](https://github.com/palakagrawal006/Leetcode-solutions/tree/master/1484-group-sold-products-by-the-date) |
 <!---LeetCode Topics End-->
