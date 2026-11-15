@@ -1,34 +1,52 @@
 
 class Solution {
 public:
-    typedef pair<int, ListNode*> v;
-    ListNode* mergeKLists(vector<ListNode*>& arr) {
-        int n = arr.size();
+    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
+        ListNode* newHead = new ListNode(100);
+        ListNode* temp = newHead;
 
-        priority_queue<v, vector<v>, greater<v>> pq;
-        // val, listnode
+        // if (!l1)
+        //     return l2;
+        // if (!l2)
+        //     return l1;
 
-        // push 1st element of each row
-        for (int i = 0; i < n; i++) {
-            if (arr[i] != NULL)
-                pq.push({arr[i]->val, arr[i]});
+        while (l1 && l2) {
+            if (l1->val < l2->val) {
+                temp->next = l1;
+                temp = temp->next;
+                l1 = l1->next;
+            } else {
+                temp->next = l2;
+                temp = temp->next;
+                l2 = l2->next;
+            }
         }
+        if (l1)
+            temp->next = l1;
+        if (l2)
+            temp->next = l2;
 
-        ListNode* dummy = new ListNode(0);
-        ListNode* temp = dummy;
+        return newHead->next;
+    }
 
-        while (!pq.empty()) {
-            auto curr = pq.top();
-            ListNode* node = curr.second;
-            pq.pop();
+    ListNode* partitionList(int h, int l, vector<ListNode*>& lists) {
+        if (l == h)
+            return lists[l];
+        if (l > h)
+            return NULL;
 
-            temp->next = node; // min node
-            temp = temp->next;
+        int mid = l + (h - l) / 2;
 
-            if (node->next != NULL)
-                pq.push({node->next->val, node->next});
-        }
+        ListNode* l1 = partitionList(h, mid + 1, lists);
+        ListNode* l2 = partitionList(mid,l, lists);
 
-        return dummy->next;
+        return mergeTwoLists(l1, l2);
+    }
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        int n = lists.size();
+
+        if(n==0) return NULL;
+
+        return partitionList(n - 1, 0, lists);
     }
 };
