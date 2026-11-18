@@ -1,43 +1,53 @@
 class Solution {
 public:
+    int getIdx( Node *head, Node* rand){
+        int idx = 0; 
+        while(head){
+            if(head == rand) return idx ;
+            head= head->next ;
+            idx++; 
+        }
+        return -1;
+    }
+    Node *getNode(Node *head , int idx){
+        if(idx== 0) return head; 
+        while(idx) {
+            head = head->next ; 
+            idx--; 
+        }
+        return head; 
+    }
     Node* copyRandomList(Node* head) {
-        if(!head)return NULL ; 
-        
-        Node *temp = head->next ; 
-        Node* newHead = new Node(head->val) ; 
-        Node* t = newHead; //traverse
+        if(!head)return head; 
+
+        Node *temp = head; 
+        Node *dummy = new Node (0) ; 
+        Node *t = dummy; 
 
         while(temp){
-            Node *newNode = new Node(temp->val) ; 
-            t->next = newNode ; 
-            t= t->next ;
-            temp= temp->next ;
+            Node * n = new Node(temp->val) ; 
+            t->next = n ; 
+            t = t->next ; 
+            temp = temp->next ;
         }
+
+        // random connection 
         temp = head ; 
-        t = newHead; 
-
-        // make map of og nodes and duplicate node
-        unordered_map <Node* , Node*> mp ; 
-
+        t = dummy->next ; 
         while(temp && t){
-            mp[temp] = t; 
-            t= t->next ;
-            temp = temp->next ; 
-        }
+            if(temp->random == NULL) t->random = NULL ;
+            else { // temp ka random null nhi h 
+            // get idx of temp-rand
+                int idx = getIdx(head, temp->random ) ; 
 
-        // make random connection 
-        for(auto x : mp){
-            Node *og = x.first;
-            Node *copy = x.second ; 
-
-            if(og->random !=NULL){
-                Node *randomOg = og->random ; 
-                Node *randomCopy = mp[randomOg] ; 
-
-                copy->random = randomCopy; 
+                Node *rand = getNode(dummy->next , idx);
+                t->random = rand;
             }
-            
+
+            temp = temp->next ; 
+            t = t->next ;
         }
-        return newHead; 
+
+        return dummy->next ;
     }
 };
