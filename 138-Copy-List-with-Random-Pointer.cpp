@@ -1,4 +1,4 @@
-// Time: O(n)  Space: O(1) (excluding copied nodes)
+
 class Solution {
 public:
    
@@ -16,49 +16,94 @@ public:
             temp = temp->next ;
         }
 
-        // random connection 
-        temp = head ; 
-        t = newHead ; 
-        Node *dummy = new Node(0) ; 
-        Node *d  = dummy ;
-        while(temp && t){
-            d->next = temp ; //og
+        temp = head; 
+        t = newHead; 
+
+        unordered_map <Node*, Node*> mp ; 
+
+        while(temp && t){ //fill
+            mp[temp] = t; 
             temp = temp->next ; 
-            d = d->next ; 
-
-            d->next = t ; // copy
             t = t->next ;
-            d = d->next ; 
         }
-        dummy = dummy->next ; 
-        Node *t1 = dummy;  // og in dummy
-        while(t1){
-             Node *t2 = t1->next ; 
-            if(t1->random) t2->random = t1->random->next ; 
-            t1= t2->next ;
+
+        // random connection 
+        for(auto x : mp){
+            Node *og = x.first;
+            Node *copy = x.second;
+
+            if(og->random != NULL){
+                Node *ogRand = og->random ; 
+                Node *copyRand = mp[ogRand] ; 
+
+                copy->random = copyRand ;
+            }
         }
-        // t1->next = NULL;
-        
-
-        Node *d1 = new Node(0) ; 
-        Node *d2 = new Node(0)  ;
-        t1= d1;
-        Node *t2  = d2 ;
-        d = dummy; 
-        while(d){
-            t1->next = d; 
-            d = d->next ; 
-            t1 = t1->next ; 
-
-            t2->next = d; 
-            d = d->next ;
-            t2 = t2->next ;  
-        } 
-        t1->next = NULL;
-        t2->next = NULL;
-        return d2->next ;
+        return newHead; 
     }
 };
+
+// // Time: O(n)  Space: O(1) (excluding copied nodes)
+// class Solution {
+// public:
+   
+//     Node* copyRandomList(Node* head) {
+//         if(!head)return head; 
+
+//         Node *temp = head->next; 
+//         Node *newHead = new Node (head->val) ; 
+//         Node *t = newHead; 
+
+//         while(temp){
+//             Node * n = new Node(temp->val) ; 
+//             t->next = n ; 
+//             t = t->next ; 
+//             temp = temp->next ;
+//         }
+
+//         // random connection 
+//         temp = head ; 
+//         t = newHead ; 
+//         Node *dummy = new Node(0) ; 
+//         Node *d  = dummy ;
+//         while(temp && t){
+//             d->next = temp ; //og
+//             temp = temp->next ; 
+//             d = d->next ; 
+
+//             d->next = t ; // copy
+//             t = t->next ;
+//             d = d->next ; 
+//         }
+//         dummy = dummy->next ; 
+//         Node *t1 = dummy;  // og in dummy
+//         while(t1){
+//              Node *t2 = t1->next ; 
+//             if(t1->random) t2->random = t1->random->next ; 
+//             t1= t2->next ;
+//         }
+//         // t1->next = NULL;
+        
+
+//         Node *d1 = new Node(0) ; 
+//         Node *d2 = new Node(0)  ;
+//         t1= d1;
+//         Node *t2  = d2 ;
+//         d = dummy; 
+//         while(d){
+//             t1->next = d; 
+//             d = d->next ; 
+//             t1 = t1->next ; 
+
+//             t2->next = d; 
+//             d = d->next ;
+//             t2 = t2->next ;  
+//         } 
+//         t1->next = NULL;
+//         t2->next = NULL;
+//         return d2->next ;
+//     }
+// };
 
 
 
