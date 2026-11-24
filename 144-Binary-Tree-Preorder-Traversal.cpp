@@ -1,45 +1,15 @@
 class Solution {
 public:
+    void helper(vector<int>& v , TreeNode* root){
+        if(!root) return ;
 
-    void preorder(vector<int> &ans, TreeNode *root){
-      
+        v.push_back(root->val) ;
+        helper(v , root->left);
+        helper(v , root->right);
     }
     vector<int> preorderTraversal(TreeNode* root) {
-        vector <int> ans; 
-
-        stack <TreeNode*> st ; 
-        if(root)st.push(root) ; 
-
-        while(!st.empty()){
-            TreeNode *temp = st.top() ;
-            st.pop() ; 
-            ans.push_back(temp->val) ; 
-
-            if(temp->right) st.push(temp->right); // stack - right first
-            if(temp->left) st.push(temp->left);
-
-        }
-        return ans ;
+        vector<int> v ; 
+        helper(v  , root) ; 
+        return v ; 
     }
 };
-
-
-// class Solution {
-// public:
-
-//     void preorder(vector<int> &v , TreeNode *root){
-//         // preorder = root left right
-//         if(root ==NULL) return; 
-
-//         v.push_back(root->val) ; 
-//         preorder(v, root->left);
-//         preorder(v , root->right);
-//     }
-//     vector<int> preorderTraversal(TreeNode* root) {
-//         vector <int> v; 
-
-//         preorder(v , root) ; 
-
-//         return v ; 
-//     }
-// };
