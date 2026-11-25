@@ -1,30 +1,26 @@
 class Solution {
 public:
-TreeNode* build(vector<int>& pre,int prelo, int prehi, vector<int>& post, int polo, int pohi){ 
-        // base case
-        if(prelo>prehi)return NULL; 
+    TreeNode* construct(vector<int>& pre, int pl, int ph, vector<int>& post,int postl , int posth ){
+        if(pl>ph) return NULL ; 
 
-        // root ele= pre ka 1st ele = prelo
-        TreeNode *root = new TreeNode(pre[prelo]) ; 
+        TreeNode *root = new TreeNode(pre[pl]);
+        if(pl== ph) return root ; 
 
-        if(prelo==prehi )return root; 
-
-        // find left subtree using postorder
-        int i= polo ; 
-        while(i<=pohi){
-            if(post[i]==pre[prelo+1]) break; 
-            i++;
+        int i = postl ;
+        while(i<=posth){
+            if(pre[pl+1]== post[i]) break; 
+            i++; 
         }
 
-        int leftCount= i-polo+1;
-        // int rightCount= inhi-i;
+        int leftCount= i- postl+1;   
 
-        root->left = build(pre, prelo+1 , prelo+leftCount, post, polo , i); 
-        root->right = build(pre, prelo+leftCount+1,prehi, post, i+1, pohi-1); 
+        root->left = construct(pre , pl+1 , pl+leftCount, post, postl,i); 
+        root->right = construct(pre , pl+leftCount+1, ph, post, i+1, posth-1);  
 
-        return root;  
+        return root; 
     }
+
     TreeNode* constructFromPrePost(vector<int>& pre, vector<int>& post) {
-        return build(pre, 0 , pre.size()-1, post, 0 , post.size()-1);
+        return construct (pre, 0, pre.size()-1, post, 0 , post.size()-1) ; 
     }
 };
