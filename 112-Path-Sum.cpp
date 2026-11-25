@@ -1,15 +1,15 @@
 class Solution {
 public:
-    bool helper(TreeNode* root, int target){
-        if(!root)return false; 
-        if(root->left==NULL && root->right==NULL && root->val == target) return true; 
+    bool helper(TreeNode* root, int t){
+        if(!root) return false; 
+        if(!root->left && !root->right && t == root->val ){
+            return true;
+        }
 
-
-        bool left = helper(root->left, target-root->val) ; 
-        bool right = helper(root->right, target-root->val) ; 
-        return left || right ; 
+        return helper(root->left, t-root->val) || 
+        helper(root->right, t-root->val) ;
     }
-    bool hasPathSum(TreeNode* root, int target) {
-        return helper(root, target) ; 
+    bool hasPathSum(TreeNode* root, int targetSum) {
+        return helper(root , targetSum) ; 
     }
 };
