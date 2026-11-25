@@ -1,30 +1,28 @@
 class Solution {
 public:
-    TreeNode* build(vector<int>& pre,int prelo, int prehi, vector<int>& in, int inlo, int inhi){ 
-        // base case
-        if(prelo>prehi)return NULL; 
+    TreeNode* construct(vector<int>& pre,int pl , int ph, vector<int>& in, int il, int ih ){
+        if(pl>ph) return NULL ; 
 
-        // root ele= pre ka 1st ele = prelo
-        TreeNode *root = new TreeNode(pre[prelo]) ; 
+        TreeNode *root = new TreeNode(pre[pl]);
+        if(pl== ph) return root ; 
 
-        if(prelo==prehi )return root; 
-
-        // find left subtree and right subtree using inorder
-        int i= inlo ; 
-        while(i<=inhi){
-            if(in[i]==pre[prelo]) break; 
-            i++;
+        int i = il ; //index of root in inorder 
+        while(i<ih){
+            if(in[i]== pre[pl]) break; 
+            i++; 
         }
 
-        int leftCount= i-inlo ;
-        int rightCount= inhi-i;
+        int leftCount= i- il;   
+        int rightCount= ih- i;
 
-        root->left = build(pre, prelo+1 , prelo+leftCount, in, inlo , i-1); 
-        root->right = build(pre, prelo+leftCount+1,prehi, in, i+1, inhi); 
+        root->left = construct(pre, pl+1, pl+leftCount , in , il , i-1); 
+        root->right = construct(pre,  pl+leftCount+1 , ph , in , i+1 , ih); 
 
-        return root;  
+        return root; 
+
+
     }
     TreeNode* buildTree(vector<int>& pre, vector<int>& in) {
-        return build(pre, 0 , pre.size()-1, in, 0 , in.size()-1); 
+        return construct (pre, 0 , pre.size()-1 , in, 0, in.size()-1) ; 
     }
 };
