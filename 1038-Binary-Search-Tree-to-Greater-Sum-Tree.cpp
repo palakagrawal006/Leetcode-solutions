@@ -1,16 +1,15 @@
 class Solution {
 public:
-    void inorder(TreeNode *root , vector <int>& v, int &sum){
-        if(root==NULL) return ; 
-        inorder(root->right , v, sum);
+    void inorder(TreeNode* root , int &sum){
+        if(!root) return ; 
+        inorder(root->right , sum ) ; 
         root->val += sum ; 
         sum = root->val ; 
-        inorder(root->left , v , sum);
+        inorder(root->left , sum ) ; 
     }
     TreeNode* bstToGst(TreeNode* root) {
-        vector <int> v;
-        int sum = 0 ; 
-        inorder(root, v, sum ); 
+        int sum = 0; 
+        inorder(root , sum ) ; 
         return root; 
     }
 };
